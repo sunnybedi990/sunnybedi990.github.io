@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baljindersingh Bedi's Portfolio</title>
+    <style>
+		@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .skills-list, .projects-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li, .projects-list li {
+            margin-bottom: 5px;
+        }
+		.header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid white;
+        }
+		.design-section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: white;
+			min-height: 100px;
+			padding: 100px 0;
+			overflow: hidden;
+
+			font-family: Jost;
+		}
+
+		.design {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.timeline {
+			width: 80%;
+			height: auto;
+			max-width: 800px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.timeline-content {
+			padding: 20px;
+			background: white;
+			-webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+				  box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+			border-radius: 5px;
+			color: black;
+			padding: 1.75rem;
+			transition: 0.4s ease;
+			overflow-wrap: break-word !important;
+			margin: 1rem;
+			margin-bottom: 20px;
+			border-radius: 6px;
+		}
+
+		.timeline-component {
+			margin: 0px 20px 20px 20px;
+		}
+
+		@media screen and (min-width: 768px) {
+		  .timeline {
+			display: grid;
+			grid-template-columns: 1fr 3px 1fr;
+		  }
+		  .timeline-middle {
+			position: relative;
+			background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+			width: 3px;
+			height: 100%;
+		  }
+		  .main-middle {
+			opacity: 0;
+		  }
+		  .timeline-circle {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+			-webkit-transform: translateX(-50%);
+					transform: translateX(-50%);
+		  }
+		}
+    </style>
+</head>
+<body>
+	
+
+    <header>
+        <div class="header-container">
+            <img src="profile_pi.jpg" alt="Baljindersingh Bedi" class="profile-pic">
+            <div>
+                <h1>Baljindersingh Bedi</h1>
+                <p>MS in Artificial Intelligence | AI and Machine Learning Enthusiast</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>I am currently pursuing an MS in Artificial Intelligence at DePaul University. With 3 years of internship experience, I specialize in AI, machine learning, and data analysis.</p>
+    </section>
+
+    <section class="skills">
+    <h2>Skills</h2>
+    
+    <h3>Technical Programming Skills</h3>
+    <ul>
+        <li>Python, Java, PHP, SQL</li>
+        <li>Android Development, Mobile Application Development</li>
+        <li>Algorithm Design and Advanced Algorithms</li>
+        <li>Database Structures, Data Structures</li>
+        <li>AI & Machine Learning</li>
+        
+        <li>Model Development & Evaluation</li>
+        
+        <li>Data Management & Visualization</li>
+        
+    </ul>
+	<h3>AI & Machine Learning</h3>
+    <ul>
+		<li>Artificial Intelligence, Machine Learning</li>
+        <li>Natural Language Processing, Computer Vision, Neural Networks</li>
+        <li>Supervised Learning, Unsupervised Learning, Reinforcement Learning</li>
+		</ul>	
+	<h3>Model Development & Evaluation</h3>
+    <ul>
+		<li>Transformers, Large Language Models, Model Evaluation</li>
+        <li>Machine Learning Libraries (Linear Regression, Decision Tree, Random Forest, Gradient Boosting, Ada Boost, XBoost, DNN, RNN)</li>
+		</ul>
+	<h3>Data Management & Visualization</h3>
+    <ul>
+		<li>Data Visualization, Feature Engineering</li>
+        <li>Firebase, MySQL</li>
+		</ul>
+    <h3>Soft Skills</h3>
+    <ul>
+        <li>Problem Solving</li>
+        <li>Research</li>
+        <li>Customer Service</li>
+        <li>Leadership</li>
+    </ul>
+    <h3>Frameworks & Libraries</h3>
+    <ul>
+        <li>PyTorch, TensorFlow</li>
+        <li>Scikit-Learn Library, OpenCV, Tesseract OCR Engine</li>
+    </ul>
+
+    <h3>Software Proficiency</h3>
+    <ul>
+        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+        <li>Android Studio</li>
+    </ul>
+
+    <h3>Business & Management Skills</h3>
+    <ul>
+        <li>Management, Project Management, Strategic Planning</li>
+        <li>Taxation, Cost Accounting, Cost Control, Financial Accounting</li>
+        <li>Account Reconciliation, Internal Audit, Financial Reporting, Financial Analysis</li>
+    </ul>
+</section>
+
+    <section class="design-section">
+    <div class="timeline">
+        <!-- DePaul University -->
+        <div class="timeline-empty"></div>
+        <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+        </div>
+        <div class="timeline-component timeline-content">
+            <h3>DePaul University, Chicago, IL</h3>
+            <p>Program: Master of Science in Artificial Intelligence<br>
+               Specialization: Machine Learning, NLP, ANN, and Computer Vision<br>
+               Expected Graduation: June 2024
+            </p>
+        </div>
+        
+        <!-- The Institute of Chartered Accountants of India -->
+        
+        <div class="timeline-component timeline-content">
+            <h3>The Institute of Chartered Accountants of India, Gujarat, India</h3>
+            <p>Program: Intermediate in Tax Law/Taxation (CA)<br>
+               Graduation: May 2018
+            </p>
+        </div>
+        <div class="timeline-middle">
+			<div class="timeline-circle"></div>
+		</div>
+		<div class="timeline-empty">
+		</div>
+
+		<div class="timeline-empty">
+		</div>
+        <!-- Gujarat University -->
+        <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+        </div>
+        <div class="timeline-component timeline-content">
+            <h3>Gujarat University, Gujarat, India</h3>
+            <p>Degree: Bachelor of Commerce (B.Com) in Accounting and Finance<br>
+               Graduation: March 2016
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <p>Artificial Intelligence Engineer at RadicalX.</p>
+        <!-- Add more experience details here -->
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul class="projects-list">
+            <li>Optimizing OCR through Image Preprocessing</li>
+            <li>Predicting Bank Loan Defaults Using Machine Learning</li>
+            <!-- Add more projects here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact me at: [sunnybedi990@gmail.com]</p>
+        <p>Find me on <a href="[www.linkedin.com/in/baljindersinghbedi]" style="color: white;">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
