@@ -291,7 +291,9 @@ article.active {
   border-radius: inherit;
   z-index: -1;
 }
-
+a:visited {
+  color: white;
+}
 
 
 
