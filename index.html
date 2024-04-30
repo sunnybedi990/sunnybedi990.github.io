@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profile_pi.jpg" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Baljindersingh Bedi">Baljindersingh Bedi</h1>
+
+          <p class="title">AI & ML Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:baljindersinghbedi409@gmail.com" class="contact-link">baljindersinghbedi409@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+17085739951" class="contact-link">+1 (708) 573-9951</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1995-09-08">Sep 08, 1995</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Chicago, Illinois, USA</address>
+            </div>
+
+           <!-- LinkedIn Contact Item -->
+			<li class="contact-item">
+				<div class="icon-box">
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</div>
+				<div class="contact-info">
+					<p class="contact-title">LinkedIn</p>
+					<linkedin><a href="https://linkedin.com/in/baljindersinghbedi" target="_blank">linkedin.com/in/baljindersinghbedi</a></linkedin>
+				</div>
+			</li>
+
+			<!-- GitHub Contact Item -->
+			<li class="contact-item">
+				<div class="icon-box">
+					<ion-icon name="logo-github"></ion-icon>
+				</div>
+				<div class="contact-info">
+					<p class="contact-title">GitHub</p>
+					<github><a href="https://github.com/sunnybedi990" target="_blank">github.com/sunnybedi990</a></github>
+				</div>
+			</li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am currently in my final quarter pursuing an MS in Artificial Intelligence at DePaul University, graduating this June.
+          </p>
+
+          <p>
+            I am passionately involved in my Master's Thesis under Professor, where I am developing a model to render road scenes in 3D using advanced computer vision techniques.
+
+My academic background in Tax, Accounting, and Statistics has endowed me with a solid understanding of statistics, enhancing my ability to comprehend and apply probabilistic models effectively. This skill has been invaluable in my current project—training and fine-tuning AI models like LLama2, Gemma, and Mistral to create a Tutor Bot. This bot is designed to adaptively teach subjects in a personalized manner, learning from users’ behaviors and preferences to tailor educational content.
+
+In my spare time, I enjoy playing tennis, swimming, and staying updated with the latest research and developments in AI. I am also an avid cook, known among my friends for my special Karahi Chicken, and I eagerly anticipate the barbecue season to share good food and great times.
+
+Driven by a relentless curiosity and a fervent passion for artificial intelligence, I am eager to leverage my skills to tackle complex challenges and innovate within the tech industry.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Model Developer</h4>
+
+                <p class="service-item-text">
+      				Expert development of AI models tailored to meet the needs of dynamic business environments, ensuring scalability and state-of-the-art performance.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">ML Pipeline development</h4>
+
+                <p class="service-item-text">
+      				Comprehensive creation and optimization of machine learning pipelines, designed for robustness and efficiency to enhance data processing and model deployment.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Powerd apps</h4>
+
+                <p class="service-item-text">
+      				Advanced development of AI-driven applications for iOS and Android, delivering innovative features and seamless user experiences.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Drivven Solutions</h4>
+
+                <p class="service-item-text">
+      				Design and implementation of AI solutions across various industries, focusing on automation, efficiency, and breakthrough innovation.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+<!-- 
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+-->
+
+        <!--
+          - testimonials modal
+        -->
+		
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <!--
+          - clients
+        -->
+		<!-- 
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+-->
+      </article>
+
+		
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+		<section class="timeline">
+			<div class="title-wrapper">
+				<div class="icon-box">
+					<ion-icon name="book-outline"></ion-icon>
+				</div>
+				<h3 class="h3">Education</h3>
+			</div>
+			<ol class="timeline-list">
+				<li class="timeline-item">
+					<h4 class="h4 timeline-item-title">DePaul University, Chicago, IL</h4>
+					<span>Expected Graduation: June 2024</span>
+					<p class="timeline-text">
+						Program: Master of Science in Artificial Intelligence with specialization in Machine Learning, Natural Language Processing, Artificial Neural Networks, and Computer Vision.
+					</p>
+				</li>
+				<li class="timeline-item">
+					<h4 class="h4 timeline-item-title">The Institute of Chartered Accountants of India, Gujarat, India</h4>
+					<span>Graduation: May 2018</span>
+					<p class="timeline-text">
+						Program: Intermediate in Tax Law/Taxation (CA).
+					</p>
+				</li>
+				<li class="timeline-item">
+					<h4 class="h4 timeline-item-title">Gujarat University, Gujarat, India</h4>
+					<span>Graduation: March 2016</span>
+					<p class="timeline-text">
+						Degree: Bachelor of Commerce (B.Com) in Accounting and Finance.
+					</p>
+				</li>
+			</ol>
+		</section>
+
+		<section class="timeline">
+			<div class="title-wrapper">
+				<div class="icon-box">
+					<ion-icon name="book-outline"></ion-icon>
+				</div>
+				<h3 class="h3">Professional Experience</h3>
+			</div>
+			<ol class="timeline-list">
+				<li class="timeline-item">
+					<h4 class="h4 timeline-item-title">Artificial Intelligence Engineer at RadicalX</h4>
+					<span>June 2023 — August 2023</span>
+					<p class="timeline-text">
+						At RadicalX, I embraced the role of an Artificial Intelligence Engineer, spearheading initiatives to develop and optimize AI-driven solutions that address complex challenges in personalized learning and fraud detection. My journey was marked by a relentless pursuit of innovation, leveraging a sophisticated toolkit comprising LLama-2, OpenAI, TensorFlow, and more.
+						<br><br>
+						<strong>Key Contributions:</strong>
+    					<ul class="contributions">
+							<li>AI-Driven Personalized Learning: Led the development of the 'Personal Tutor' tool, an AI-powered platform designed to deliver customized learning experiences.</li>
+							<li>Enhanced Model Efficiency: Advanced the Llama2 model's performance and efficiency, focusing on quiz generation and answer explanation features.</li>
+							<li>Comparative Model Analysis: Conducted an in-depth comparative analysis between BERT and Llama2 models, demonstrating the superior efficacy of Llama2.</li>
+							<li>Data Privacy and Transparency: Championed the use of open-source models to ensure data privacy and transparency in our AI development process.</li>
+							<li>Collaboration and Innovation: Played a pivotal role in fostering a culture of collaboration and innovation within our team.</li>
+							<li>Technologies Used: LLama-2, OpenAI, TensorFlow, BERT, FAISS, CPU and GPU computing.</li>
+						</ul>
+					    <p class="impact-text">
+
+						<strong>Impact:</strong> My contributions at RadicalX have not only accelerated the company's technological advancements but have also laid the groundwork for pioneering personalized education solutions.
+					</p>
+					</p>
+				</li>
+			</ol>
+		</section>
+
+
+        <section class="skill">
+			<h3 class="h3 skills-title">My skills</h3>
+			<ul class="skills-list content-card">
+				<li class="skills-item">
+					<div class="title-wrapper">
+						<h5 class="h5">Artificial Intelligence</h5>
+						<data value="90">90%</data>
+					</div>
+					<div class="skill-progress-bg">
+						<div class="skill-progress-fill" style="width: 90%;"></div>
+					</div>
+				</li>
+
+				<li class="skills-item">
+					<div class="title-wrapper">
+						<h5 class="h5">Machine Learning</h5>
+						<data value="85">85%</data>
+					</div>
+					<div class="skill-progress-bg">
+						<div class="skill-progress-fill" style="width: 85%;"></div>
+					</div>
+				</li>
+
+				<li class="skills-item">
+					<div class="title-wrapper">
+						<h5 class="h5">Data Science & Analytics</h5>
+						<data value="80">80%</data>
+					</div>
+					<div class="skill-progress-bg">
+						<div class="skill-progress-fill" style="width: 80%;"></div>
+					</div>
+				</li>
+
+				<li class="skills-item">
+					<div class="title-wrapper">
+						<h5 class="h5">Neural Networks & Deep Learning</h5>
+						<data value="75">75%</data>
+					</div>
+					<div class="skill-progress-bg">
+						<div class="skill-progress-fill" style="width: 75%;"></div>
+					</div>
+				</li>
+
+				<li class="skills-item">
+					<div class="title-wrapper">
+						<h5 class="h5">Natural Language Processing</h5>
+						<data value="70">70%</data>
+					</div>
+					<div class="skill-progress-bg">
+						<div class="skill-progress-fill" style="width: 70%;"></div>
+					</div>
+				</li>
+				  <!-- Additional Technical Programming Skills -->
+				<li class="skills-item">
+					<div class="title-wrapper">
+						<h5 class="h5">Python</h5>
+						<data value="80">80%</data>
+					</div>
+					<div class="skill-progress-bg">
+						<div class="skill-progress-fill" style="width: 80%;"></div>
+					</div>
+				</li>
+				<li class="skills-item">
+					<div class="title-wrapper">
+						<h5 class="h5">Java</h5>
+						<data value="40">40%</data>
+					</div>
+					<div class="skill-progress-bg">
+						<div class="skill-progress-fill" style="width: 40%;"></div>
+					</div>
+				</li>
+				<!-- Example for Database and Data Management -->
+				<li class="skills-item">
+					<div class="title-wrapper">
+						<h5 class="h5">Database Management</h5>
+						<data value="75">75%</data>
+					</div>
+					<div class="skill-progress-bg">
+						<div class="skill-progress-fill" style="width: 75%;"></div>
+					</div>
+				</li>
+				<!-- Example for Frameworks -->
+				<li class="skills-item">
+					<div class="title-wrapper">
+						<h5 class="h5">TensorFlow & PyTorch</h5>
+						<data value="85">85%</data>
+					</div>
+					<div class="skill-progress-bg">
+						<div class="skill-progress-fill" style="width: 85%;"></div>
+					</div>
+				</li>
+				<!-- Example for Soft Skills -->
+				<li class="skills-item">
+					<div class="title-wrapper">
+						<h5 class="h5">Leadership & Team Management</h5>
+						<data value="90">90%</data>
+					</div>
+					<div class="skill-progress-bg">
+						<div the="skill-progress-fill" style="width: 90%;"></div>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>Machine Learning</button>
+            </li>
+            <li class="filter-item">
+                <button data-filter-btn>Computer Vision</button>
+            </li>
+            <li class="filter-item">
+                <button data-filter-btn>AI Applications</button>
+            </li>
+            <li class="filter-item">
+                <button data-filter-btn>Chatbots</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Computer Vision</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI Applications</button>
+              </li>
+				<li class="select-item">
+                <button data-select-item>Chatbots</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+         
+			<ul class="project-list">
+            <!-- Predicting Bank Loan Defaults Using Machine Learning -->
+            <li class="project-item active" data-filter-item data-category="Machine Learning">
+                <a href="#">
+                    <figure class="project-img">
+						<div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                        <img src="./assets/images/project-loan-defaults.jpg" alt="Predicting Bank Loan Defaults" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Predicting Bank Loan Defaults</h3>
+                    <p class="project-category">Machine Learning</p>
+                </a>
+            </li>
+
+            <!-- Retailrocket Recommender System Data Analysis -->
+            <li class="project-item active" data-filter-item data-category="Machine Learning">
+                <a href="#">
+                    <figure class="project-img">
+						<div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                        <img src="./assets/images/project-retailrocket.jpg" alt="Retailrocket Recommender System" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Retailrocket Recommender System</h3>
+                    <p class="project-category">Machine Learning</p>
+                </a>
+            </li>
+
+            <!-- AI-Driven Dino Game Using CNN -->
+            <li class="project-item active" data-filter-item data-category="AI Applications">
+                <a href="#">
+                    <figure class="project-img">
+						<div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                        <img src="./assets/images/Dino_non-birthday_version.gif" alt="AI-Driven Dino Game" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">AI-Driven Dino Game</h3>
+                    <p class="project-category">AI Applications</p>
+                </a>
+            </li>
+
+            <!-- Tutor Buddy -->
+            <li class="project-item active" data-filter-item data-category="AI Applications">
+                <a href="#">
+                    <figure class="project-img">
+						<div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                        <img src="./assets/images/project-tutor-buddy.jpg" alt="Tutor Buddy" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Tutor Buddy</h3>
+                    <p class="project-category">AI Applications</p>
+                </a>
+            </li>
+
+            <!-- Computer Vision for 3D Reconstruction -->
+            <li class="project-item active" data-filter-item data-category="Computer Vision">
+                <a href="#">
+                    <figure class="project-img">
+						<div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                        <img src="./assets/images/project-3d-reconstruction.gif" alt="3D Reconstruction" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">3D Reconstruction</h3>
+                    <p class="project-category">Computer Vision</p>
+                </a>
+            </li>
+
+            <!-- RAG Application for Chatbots -->
+            <li class="project-item active" data-filter-item data-category="Chatbots">
+                <a href="#">
+                    <figure class="project-img">
+						<div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                        <img src="./assets/images/project-chatbots.jpg" alt="RAG Application for Chatbots" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">RAG Application for Chatbots</h3>
+                    <p class="project-category">Chatbots</p>
+                </a>
+            </li>
+        </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.8460334488!2d-87.73196394999998!3d41.83373295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1714450630112!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
