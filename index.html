@@ -978,37 +978,41 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	document.addEventListener('DOMContentLoaded', function () {
-	  const filterButtons = document.querySelectorAll('[data-filter-btn]');
-	  const projects = document.querySelectorAll('[data-filter-item]');
-	
-	  filterButtons.forEach(button => {
-	    button.addEventListener('click', () => {
-	      const filter = button.textContent.trim().toLowerCase();
-	      
-	      // Remove 'active' class from all buttons and add to the clicked one
-	      filterButtons.forEach(btn => btn.classList.remove('active'));
-	      button.classList.add('active');
-	
-	      // Show all projects if 'All' is selected
-	      if (filter === 'all') {
-	        projects.forEach(project => {
-	          project.style.display = 'block';
-	        });
-	      } else {
-	        // Hide/show projects based on the filter
-	        projects.forEach(project => {
-	          const category = project.getAttribute('data-category').toLowerCase();
-	          if (category === filter) {
-	            project.style.display = 'block';
-	          } else {
-	            project.style.display = 'none';
-	          }
-	        });
-	      }
-	    });
+<!-- JavaScript for filtering projects -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('[data-filter-btn]');
+    const projects = document.querySelectorAll('[data-filter-item]');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+	const filter = button.textContent.trim().toLowerCase();
+
+	// Remove 'active' class from all buttons and add to the clicked one
+	filterButtons.forEach(btn => btn.classList.remove('active'));
+	button.classList.add('active');
+
+	// Show all projects if 'All' is selected
+	if (filter === 'all') {
+	  projects.forEach(project => {
+	    project.style.display = 'block';
 	  });
-	});
+	} else {
+	  // Hide/show projects based on the filter
+	  projects.forEach(project => {
+	    const category = project.getAttribute('data-category').toLowerCase();
+	    if (category === filter) {
+	      project.style.display = 'block';
+	    } else {
+	      project.style.display = 'none';
+	    }
+	  });
+	}
+      });
+    });
+  });
+</script>
+
 </body>
 
 </html>
