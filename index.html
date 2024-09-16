@@ -874,7 +874,7 @@
             </li>
 	<!-- Code Translator App -->
 	<li class="project-item active" data-filter-item data-category="AI Applications">
-	  <a href="#">
+	<a href="https://github.com/sunnybedi990/code-translator" target="_blank">
 	    <figure class="project-img">
 	      <div class="project-item-icon-box">
 		<ion-icon name="eye-outline"></ion-icon>
@@ -883,9 +883,7 @@
 	    </figure>
 	    <h3 class="project-title">Code Translator App</h3>
 	    <p class="project-category">AI Applications</p>
-	    <p class="project-description">
-	      Developed an application that translates code between programming languages like Python, Java, and C++. Utilized LLMs (Groq, OpenAI, Llama3) for enhanced code translation accuracy and support for handling SQL, NoSQL databases, and bash scripts. [Check out the GitHub repository](https://github.com/sunnybedi990/code-translator).
-	    </p>
+	   
 	  </a>
 	</li>
 
@@ -980,7 +978,37 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+	document.addEventListener('DOMContentLoaded', function () {
+	  const filterButtons = document.querySelectorAll('[data-filter-btn]');
+	  const projects = document.querySelectorAll('[data-filter-item]');
+	
+	  filterButtons.forEach(button => {
+	    button.addEventListener('click', () => {
+	      const filter = button.textContent.trim().toLowerCase();
+	      
+	      // Remove 'active' class from all buttons and add to the clicked one
+	      filterButtons.forEach(btn => btn.classList.remove('active'));
+	      button.classList.add('active');
+	
+	      // Show all projects if 'All' is selected
+	      if (filter === 'all') {
+	        projects.forEach(project => {
+	          project.style.display = 'block';
+	        });
+	      } else {
+	        // Hide/show projects based on the filter
+	        projects.forEach(project => {
+	          const category = project.getAttribute('data-category').toLowerCase();
+	          if (category === filter) {
+	            project.style.display = 'block';
+	          } else {
+	            project.style.display = 'none';
+	          }
+	        });
+	      }
+	    });
+	  });
+	});
 </body>
 
 </html>
